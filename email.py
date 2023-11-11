@@ -14,8 +14,8 @@ class MyHandler(FileSystemEventHandler):
             # 取得檔案名
             filename =  os.path.basename(event.src_path)
             # 設定寄件人、收件人、主旨、內容等資訊
-            from_email = 'ewdscxqaz0936@gmail.com'
-            to_email = '109316117@gms.tcu.edu.tw'
+            from_email = '123456789@gmail.com'
+            to_email = '987654321@gmail.com'
             subject = '檔案附件'
             body = '這是一封測試郵件，請勿回覆。'
 
@@ -38,8 +38,8 @@ class MyHandler(FileSystemEventHandler):
             # 使用SMTP協議發送郵件
             smtp_server = 'smtp.gmail.com'
             smtp_port = 587
-            smtp_username = 'ewdscxqaz0936@gmail.com'
-            smtp_password = 'njnmdeagxvzroamw'
+            smtp_username = '123456789@gmail.com'
+            smtp_password = '111111111'
 
             with smtplib.SMTP(smtp_server, smtp_port) as server:
                 server.starttls()
